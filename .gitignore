@@ -17,5 +17,6 @@ MANIFEST
 venv/
 
 histoqc/_version.py
+histoqc_output_*/
 environment.yml
 
