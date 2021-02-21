@@ -37,3 +37,10 @@ def test_calling_with_defaults(pipeline_state, histoqc_func):
             pytest.skip("function has required default arguments")
         raise
     assert mask is not None
+
+
+def test_pipeline_chain(pipeline_state):
+    c = qc.PipelineChain()
+    qc.get_contrast(c)
+    qc.get_histogram(c)
+    assert c.run(pipeline_state) is not None
