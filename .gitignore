@@ -13,6 +13,8 @@ wheels/
 *.whl
 MANIFEST
 
+htmlcov/
+
 .venv
 venv/
 
